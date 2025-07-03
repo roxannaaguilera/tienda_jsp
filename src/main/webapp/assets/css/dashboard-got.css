@@ -1,0 +1,1315 @@
+/* ===== DASHBOARD GOT SPORTWEAR - ESTILOS MODERNOS ===== */
+
+:root {
+    /* Paleta de colores GOT Sportwear - Solo Rosa/Morado */
+    --primary-gradient: linear-gradient(135deg, #f093fb 0%, #764ba2 100%);
+    --secondary-gradient: linear-gradient(135deg, #ff6b9d 0%, #f5576c 100%);
+    --tertiary-gradient: linear-gradient(135deg, #764ba2 0%, #f093fb 100%);
+    --dark-gradient: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    --text-primary: #2c3e50;
+    --text-secondary: #7f8c8d;
+    --accent-pink: #ff6b9d;
+    --accent-purple: #764ba2;
+    --accent-light: #f093fb;
+    
+    /* Colores complementarios */
+    --background-light: #f8f9fa;
+    --white: #ffffff;
+    --shadow-light: rgba(0,0,0,0.1);
+    --shadow-medium: rgba(0,0,0,0.15);
+    --shadow-dark: rgba(0,0,0,0.25);
+    --shadow-pink: rgba(255, 107, 157, 0.3);
+    --shadow-purple: rgba(118, 75, 162, 0.3);
+}
+
+/* ===== BASE STYLES ===== */
+body {
+    font-family: 'Inter', sans-serif !important;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+}
+
+/* ===== HEADER MODERNIZADO - ROSA/MORADO ===== */
+.main-header {
+    background: var(--primary-gradient) !important;
+    box-shadow: 0 4px 20px var(--shadow-pink);
+    border: none !important;
+}
+
+.main-header .logo {
+    background: rgba(255,255,255,0.15) !important;
+    border-right: 1px solid rgba(255,255,255,0.2) !important;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.main-header .logo:hover {
+    background: rgba(255,255,255,0.25) !important;
+    transform: translateY(-2px);
+}
+
+.main-header .logo .logo-lg {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white !important;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.main-header .logo .logo-mini {
+    color: white !important;
+    font-weight: 800;
+}
+
+.main-header .navbar {
+    background: transparent !important;
+}
+
+.navbar-custom-menu > .nav > li > .dropdown-menu {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 40px var(--shadow-medium);
+    padding: 10px 0;
+}
+
+/* Labels con gradientes rosa/morado */
+.label-success {
+    background: var(--secondary-gradient) !important;
+    border: none;
+}
+
+.label-warning {
+    background: var(--tertiary-gradient) !important;
+    border: none;
+}
+
+.label-danger {
+    background: var(--accent-pink) !important;
+    border: none;
+}
+
+/* ===== SIDEBAR MODERNIZADO - ROSA/MORADO ===== */
+.main-sidebar {
+    background: var(--dark-gradient) !important;
+    box-shadow: 4px 0 20px var(--shadow-light);
+}
+
+.sidebar-menu > li.header {
+    background: rgba(240, 147, 251, 0.1) !important;
+    color: #bdc3c7 !important;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 15px 20px 10px 20px;
+    margin: 10px 10px 5px 10px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-pink);
+}
+
+.sidebar-menu > li > a {
+    padding: 12px 15px !important;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    margin: 2px 10px;
+    color: #ecf0f1 !important;
+}
+
+.sidebar-menu > li > a:hover,
+.sidebar-menu > li.active > a {
+    background: var(--primary-gradient) !important;
+    color: white !important;
+    transform: translateX(8px);
+    box-shadow: 0 4px 15px var(--shadow-pink);
+}
+
+.sidebar-menu > li > a > i {
+    margin-right: 12px;
+    width: 20px;
+    text-align: center;
+    color: var(--accent-pink);
+}
+
+.sidebar-menu > li > a:hover > i,
+.sidebar-menu > li.active > a > i {
+    color: white !important;
+}
+
+/* User panel */
+.user-panel > .info > p {
+    color: white !important;
+    font-weight: 600;
+}
+
+.user-panel > .info > a {
+    color: var(--accent-pink) !important;
+}
+
+.user-panel .img-circle {
+    border: 3px solid var(--accent-pink);
+}
+
+/* Sidebar form */
+.sidebar-form .form-control {
+    background: rgba(255,255,255,0.1) !important;
+    border: 1px solid rgba(255,255,255,0.2) !important;
+    color: white !important;
+    border-radius: 10px;
+}
+
+.sidebar-form .form-control::placeholder {
+    color: rgba(255,255,255,0.6) !important;
+}
+
+.sidebar-form .input-group-btn .btn {
+    background: var(--accent-pink) !important;
+    border: none !important;
+    border-radius: 0 10px 10px 0;
+}
+
+/* ===== CONTENT WRAPPER ===== */
+.content-wrapper {
+    background: transparent !important;
+    min-height: calc(100vh - 50px);
+}
+
+/* Content header */
+.content-header h1 {
+    color: var(--text-primary);
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+.breadcrumb {
+    background: rgba(255,255,255,0.8) !important;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.breadcrumb > li > a {
+    color: var(--text-primary) !important;
+}
+
+/* ===== INFO BOXES MODERNIZADOS - ROSA/MORADO ===== */
+.info-box {
+    border-radius: 20px !important;
+    box-shadow: 0 8px 30px var(--shadow-light) !important;
+    border: none !important;
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background: white !important;
+    position: relative;
+}
+
+.info-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--primary-gradient);
+}
+
+.info-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px var(--shadow-pink) !important;
+}
+
+.info-box-icon {
+    background: var(--primary-gradient) !important;
+    border-radius: 20px 0 60px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.info-box-icon > i {
+    font-size: 30px !important;
+    color: white !important;
+}
+
+.info-box-content {
+    padding: 25px 20px !important;
+}
+
+.info-box-number {
+    font-weight: 800 !important;
+    font-size: 28px !important;
+    color: var(--text-primary) !important;
+    margin-bottom: 5px;
+}
+
+.info-box-text {
+    font-weight: 600 !important;
+    color: var(--text-secondary) !important;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.progress {
+    border-radius: 10px !important;
+    overflow: hidden;
+    height: 6px !important;
+    background: rgba(0,0,0,0.05) !important;
+    margin: 10px 0 !important;
+}
+
+.progress-bar {
+    border-radius: 10px;
+    transition: all 0.6s ease;
+}
+
+.progress-description {
+    font-size: 11px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* Colores específicos para cada métrica - SOLO ROSA/MORADO */
+.info-box:nth-child(1) .info-box-icon {
+    background: var(--secondary-gradient) !important;
+}
+
+.info-box:nth-child(2) .info-box-icon {
+    background: var(--tertiary-gradient) !important;
+}
+
+.info-box:nth-child(3) .info-box-icon {
+    background: linear-gradient(135deg, #f093fb 0%, #ff6b9d 100%) !important;
+}
+
+.info-box:nth-child(4) .info-box-icon {
+    background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%) !important;
+}
+
+/* ===== BOXES PRINCIPALES - ROSA/MORADO ===== */
+.box {
+    border-radius: 20px !important;
+    box-shadow: 0 8px 30px var(--shadow-light) !important;
+    border: none !important;
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background: white !important;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px var(--shadow-pink) !important;
+}
+
+.box-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+    border-bottom: 3px solid transparent !important;
+    border-image: var(--primary-gradient) 1 !important;
+    padding: 20px !important;
+}
+
+.box-title {
+    font-weight: 700 !important;
+    color: var(--text-primary) !important;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+}
+
+.box-title i {
+    color: var(--accent-pink);
+    margin-right: 10px;
+}
+
+.box-primary {
+    border-top: 4px solid transparent !important;
+    border-image: var(--primary-gradient) 1 !important;
+}
+
+/* Colores específicos para boxes */
+.box[style*="border-top: 4px solid #4facfe"] {
+    border-image: var(--tertiary-gradient) 1 !important;
+}
+
+.box[style*="border-top: 4px solid #f093fb"] {
+    border-image: var(--secondary-gradient) 1 !important;
+}
+
+.box[style*="border-top: 4px solid #667eea"] {
+    border-image: var(--primary-gradient) 1 !important;
+}
+
+/* ===== USERS LIST MODERNIZADA ===== */
+.users-list > li {
+    border-radius: 15px !important;
+    margin: 15px !important;
+    padding: 20px !important;
+    background: var(--background-light) !important;
+    transition: all 0.4s ease;
+    border: 2px solid transparent !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.users-list > li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--primary-gradient);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.users-list > li:hover::before {
+    transform: scaleX(1);
+}
+
+.users-list > li:hover {
+    background: white !important;
+    border-color: transparent !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px var(--shadow-pink);
+}
+
+.users-list > li img {
+    border: 3px solid var(--accent-pink) !important;
+    transition: all 0.3s ease;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.users-list > li:hover img {
+    border-color: var(--accent-purple) !important;
+    transform: scale(1.1);
+}
+
+.users-list-name {
+    font-weight: 600 !important;
+    color: var(--text-primary) !important;
+    text-decoration: none !important;
+    font-size: 14px;
+}
+
+.users-list-date {
+    color: var(--text-secondary) !important;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* ===== BOTONES MODERNOS - ROSA/MORADO ===== */
+.btn-primary {
+    background: var(--primary-gradient) !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 12px 24px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    color: white !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background: var(--secondary-gradient) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px var(--shadow-pink);
+    color: white !important;
+}
+
+.btn-box-tool {
+    color: var(--text-secondary) !important;
+    transition: all 0.3s ease;
+}
+
+.btn-box-tool:hover {
+    color: var(--accent-pink) !important;
+    transform: scale(1.1);
+}
+
+/* ===== DROPDOWN MENUS - ROSA/MORADO ===== */
+.dropdown-menu {
+    border-radius: 15px !important;
+    border: none !important;
+    box-shadow: 0 15px 40px var(--shadow-medium) !important;
+    padding: 15px 0 !important;
+    backdrop-filter: blur(10px);
+}
+
+.dropdown-menu > li > a {
+    padding: 12px 20px !important;
+    transition: all 0.3s ease;
+    color: var(--text-primary) !important;
+}
+
+.dropdown-menu > li > a:hover {
+    background: var(--primary-gradient) !important;
+    color: white !important;
+    transform: translateX(5px);
+}
+
+.dropdown-menu > li > a > i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+/* ===== TABLES - ROSA/MORADO ===== */
+.table > thead > tr > th {
+    border-bottom: 2px solid var(--accent-pink);
+    font-weight: 600;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.table > tbody > tr > td {
+    border-top: 1px solid rgba(0,0,0,0.05);
+    vertical-align: middle;
+}
+
+.table > tbody > tr:hover {
+    background-color: rgba(240, 147, 251, 0.05);
+}
+
+/* Labels en tablas - ROSA/MORADO */
+.table .label {
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.table .label[style*="#f093fb"] {
+    background: var(--primary-gradient) !important;
+    color: white;
+}
+
+.table .label[style*="#667eea"] {
+    background: var(--tertiary-gradient) !important;
+    color: white;
+}
+
+.table .label[style*="#4facfe"] {
+    background: var(--secondary-gradient) !important;
+    color: white;
+}
+
+.table .label[style*="#ff6b9d"] {
+    background: var(--accent-pink) !important;
+    color: white;
+}
+
+/* ===== DESCRIPTION BLOCKS ===== */
+.description-block {
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.description-block:hover {
+    background: rgba(240, 147, 251, 0.05);
+    transform: translateY(-3px);
+}
+
+.description-block .description-header {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 10px 0 5px 0;
+}
+
+.description-block .description-text {
+    color: var(--text-secondary);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Enlaces de colores en description blocks */
+.description-block a[style*="#f093fb"] {
+    color: var(--accent-light) !important;
+}
+
+.description-block a[style*="#667eea"] {
+    color: var(--accent-purple) !important;
+}
+
+.description-block a[style*="#4facfe"] {
+    color: var(--accent-pink) !important;
+}
+
+.description-block a[style*="#ff6b9d"] {
+    color: var(--secondary-gradient) !important;
+}
+
+.description-block a:hover {
+    transform: scale(1.05);
+    text-shadow: 0 2px 10px var(--shadow-pink);
+}
+
+/* ===== MAIN FOOTER - ROSA/MORADO ===== */
+.main-footer {
+    background: var(--dark-gradient) !important;
+    color: #bdc3c7 !important;
+    border-top: 4px solid transparent !important;
+    border-image: var(--primary-gradient) 1 !important;
+    padding: 20px !important;
+}
+
+.main-footer a {
+    color: var(--accent-pink) !important;
+    text-decoration: none;
+}
+
+.main-footer a:hover {
+    color: var(--accent-light) !important;
+}
+
+/* ===== ANIMACIONES ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.info-box, .box {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.info-box:nth-child(1) { animation-delay: 0.1s; }
+.info-box:nth-child(2) { animation-delay: 0.2s; }
+.info-box:nth-child(3) { animation-delay: 0.3s; }
+.info-box:nth-child(4) { animation-delay: 0.4s; }
+
+.box:nth-child(1) { animation: slideInRight 0.6s ease forwards; animation-delay: 0.5s; }
+.box:nth-child(2) { animation: slideInRight 0.6s ease forwards; animation-delay: 0.6s; }
+.box:nth-child(3) { animation: slideInRight 0.6s ease forwards; animation-delay: 0.7s; }
+
+/* ===== SCROLLBAR PERSONALIZADO - ROSA ===== */
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.1);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: var(--accent-pink);
+    border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-light);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .info-box {
+        margin-bottom: 20px;
+    }
+    
+    .box {
+        margin-bottom: 25px;
+    }
+    
+    .users-list > li {
+        margin: 10px !important;
+        padding: 15px !important;
+    }
+    
+    .content-header h1 {
+        font-size: 24px;
+    }
+    
+    .sidebar-menu > li > a {
+        padding: 10px 12px !important;
+    }
+    
+    .sidebar-menu > li.header {
+        padding: 12px 15px 8px 15px;
+        margin: 8px 8px 3px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-box-content {
+        padding: 20px 15px !important;
+    }
+    
+    .info-box-number {
+        font-size: 24px !important;
+    }
+    
+    .box-header {
+        padding: 15px !important;
+    }
+    
+    .box-title {
+        font-size: 16px;
+    }
+    
+    .description-block {
+        padding: 15px;
+    }
+}
+
+/* ===== EFECTOS ESPECIALES ===== */
+.info-box, .box {
+    position: relative;
+    overflow: hidden;
+}
+
+.info-box::after, .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(240, 147, 251, 0.4), transparent);
+    transition: left 0.6s ease;
+    pointer-events: none;
+}
+
+.info-box:hover::after, .box:hover::after {
+    left: 100%;
+}
+
+/* Logo con efecto especial rosa */
+.main-header .logo .logo-lg {
+    background: linear-gradient(45deg, #fff, #f093fb, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===== BASE STYLES ===== */
+body {
+    font-family: 'Inter', sans-serif !important;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+/* ===== HEADER MODERNIZADO ===== */
+.main-header {
+    background: var(--primary-gradient) !important;
+    box-shadow: 0 4px 20px var(--shadow-medium);
+    border: none !important;
+    backdrop-filter: blur(10px);
+}
+
+.main-header .logo {
+    background: rgba(255,255,255,0.15) !important;
+    border-right: 1px solid rgba(255,255,255,0.2) !important;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.main-header .logo:hover {
+    background: rgba(255,255,255,0.25) !important;
+    transform: translateY(-2px);
+}
+
+.main-header .logo .logo-lg {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.main-header .navbar {
+    background: transparent !important;
+}
+
+.navbar-custom-menu > .nav > li > .dropdown-menu {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 40px var(--shadow-medium);
+    padding: 10px 0;
+}
+
+/* Labels con gradientes */
+.label-success {
+    background: var(--secondary-gradient) !important;
+}
+
+.label-warning {
+    background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%) !important;
+}
+
+.label-danger {
+    background: var(--accent-pink) !important;
+}
+
+/* ===== SIDEBAR MODERNIZADO ===== */
+.main-sidebar {
+    background: var(--dark-gradient) !important;
+    box-shadow: 4px 0 20px var(--shadow-light);
+}
+
+.sidebar-menu > li.header {
+    background: rgba(102, 126, 234, 0.1) !important;
+    color: #bdc3c7 !important;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 15px 20px 10px 20px;
+    margin: 10px 10px 5px 10px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-pink);
+}
+
+.sidebar-menu > li > a {
+    padding: 12px 15px !important;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    margin: 2px 10px;
+    color: #ecf0f1 !important;
+}
+
+.sidebar-menu > li > a:hover,
+.sidebar-menu > li.active > a {
+    background: var(--secondary-gradient) !important;
+    color: white !important;
+    transform: translateX(8px);
+    box-shadow: 0 4px 15px rgba(240, 147, 251, 0.4);
+}
+
+.sidebar-menu > li > a > i {
+    margin-right: 12px;
+    width: 20px;
+    text-align: center;
+    color: var(--accent-pink);
+}
+
+.sidebar-menu > li > a:hover > i,
+.sidebar-menu > li.active > a > i {
+    color: white !important;
+}
+
+/* User panel */
+.user-panel > .info > p {
+    color: white !important;
+    font-weight: 600;
+}
+
+.user-panel > .info > a {
+    color: var(--accent-pink) !important;
+}
+
+.user-panel .img-circle {
+    border: 3px solid var(--accent-pink);
+}
+
+/* Sidebar form */
+.sidebar-form .form-control {
+    background: rgba(255,255,255,0.1) !important;
+    border: 1px solid rgba(255,255,255,0.2) !important;
+    color: white !important;
+    border-radius: 10px;
+}
+
+.sidebar-form .form-control::placeholder {
+    color: rgba(255,255,255,0.6) !important;
+}
+
+.sidebar-form .input-group-btn .btn {
+    background: var(--accent-pink) !important;
+    border: none !important;
+    border-radius: 0 10px 10px 0;
+}
+
+/* ===== CONTENT WRAPPER ===== */
+.content-wrapper {
+    background: transparent !important;
+    min-height: calc(100vh - 50px);
+}
+
+/* Content header */
+.content-header h1 {
+    color: var(--text-primary);
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+.breadcrumb {
+    background: rgba(255,255,255,0.8) !important;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.breadcrumb > li > a {
+    color: var(--text-primary) !important;
+}
+
+/* ===== INFO BOXES MODERNIZADOS ===== */
+.info-box {
+    border-radius: 20px !important;
+    box-shadow: 0 8px 30px var(--shadow-light) !important;
+    border: none !important;
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background: white !important;
+    position: relative;
+}
+
+.info-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--secondary-gradient);
+}
+
+.info-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px var(--shadow-medium) !important;
+}
+
+.info-box-icon {
+    background: var(--primary-gradient) !important;
+    border-radius: 20px 0 60px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.info-box-icon > i {
+    font-size: 30px !important;
+    color: white !important;
+}
+
+.info-box-content {
+    padding: 25px 20px !important;
+}
+
+.info-box-number {
+    font-weight: 800 !important;
+    font-size: 28px !important;
+    color: var(--text-primary) !important;
+    margin-bottom: 5px;
+}
+
+.info-box-text {
+    font-weight: 600 !important;
+    color: var(--text-secondary) !important;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.progress {
+    border-radius: 10px !important;
+    overflow: hidden;
+    height: 6px !important;
+    background: rgba(0,0,0,0.05) !important;
+    margin: 10px 0 !important;
+}
+
+.progress-bar {
+    border-radius: 10px;
+    transition: all 0.6s ease;
+}
+
+.progress-description {
+    font-size: 11px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* Colores especificos para cada metrica */
+.info-box:nth-child(1) .info-box-icon {
+    background: var(--secondary-gradient) !important;
+}
+
+.info-box:nth-child(2) .info-box-icon {
+    background: var(--tertiary-gradient) !important;
+}
+
+.info-box:nth-child(3) .info-box-icon {
+    background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%) !important;
+}
+
+.info-box:nth-child(4) .info-box-icon {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%) !important;
+}
+
+/* ===== BOXES PRINCIPALES ===== */
+.box {
+    border-radius: 20px !important;
+    box-shadow: 0 8px 30px var(--shadow-light) !important;
+    border: none !important;
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background: white !important;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px var(--shadow-medium) !important;
+}
+
+.box-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+    border-bottom: 3px solid transparent !important;
+    border-image: var(--secondary-gradient) 1 !important;
+    padding: 20px !important;
+}
+
+.box-title {
+    font-weight: 700 !important;
+    color: var(--text-primary) !important;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+}
+
+.box-title i {
+    color: var(--accent-pink);
+    margin-right: 10px;
+}
+
+.box-primary {
+    border-top: 4px solid transparent !important;
+    border-image: var(--secondary-gradient) 1 !important;
+}
+
+/* ===== USERS LIST MODERNIZADA ===== */
+.users-list > li {
+    border-radius: 15px !important;
+    margin: 15px !important;
+    padding: 20px !important;
+    background: var(--background-light) !important;
+    transition: all 0.4s ease;
+    border: 2px solid transparent !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.users-list > li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--secondary-gradient);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.users-list > li:hover::before {
+    transform: scaleX(1);
+}
+
+.users-list > li:hover {
+    background: white !important;
+    border-color: transparent !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px var(--shadow-light);
+}
+
+.users-list > li img {
+    border: 3px solid var(--accent-pink) !important;
+    transition: all 0.3s ease;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.users-list > li:hover img {
+    border-color: var(--accent-purple) !important;
+    transform: scale(1.1);
+}
+
+.users-list-name {
+    font-weight: 600 !important;
+    color: var(--text-primary) !important;
+    text-decoration: none !important;
+    font-size: 14px;
+}
+
+.users-list-date {
+    color: var(--text-secondary) !important;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* ===== BOTONES MODERNOS ===== */
+.btn-primary {
+    background: var(--secondary-gradient) !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 12px 24px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #e8309e 0%, #f04057 100%) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(240, 147, 251, 0.4);
+}
+
+.btn-box-tool {
+    color: var(--text-secondary) !important;
+    transition: all 0.3s ease;
+}
+
+.btn-box-tool:hover {
+    color: var(--accent-pink) !important;
+    transform: scale(1.1);
+}
+
+/* ===== DROPDOWN MENUS ===== */
+.dropdown-menu {
+    border-radius: 15px !important;
+    border: none !important;
+    box-shadow: 0 15px 40px var(--shadow-medium) !important;
+    padding: 15px 0 !important;
+    backdrop-filter: blur(10px);
+}
+
+.dropdown-menu > li > a {
+    padding: 12px 20px !important;
+    transition: all 0.3s ease;
+    color: var(--text-primary) !important;
+}
+
+.dropdown-menu > li > a:hover {
+    background: var(--secondary-gradient) !important;
+    color: white !important;
+    transform: translateX(5px);
+}
+
+.dropdown-menu > li > a > i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+/* ===== TABLES ===== */
+.table > thead > tr > th {
+    border-bottom: 2px solid var(--accent-pink);
+    font-weight: 600;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.table > tbody > tr > td {
+    border-top: 1px solid rgba(0,0,0,0.05);
+    vertical-align: middle;
+}
+
+.table > tbody > tr:hover {
+    background-color: rgba(102, 126, 234, 0.05);
+}
+
+/* ===== DESCRIPTION BLOCKS ===== */
+.description-block {
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.description-block:hover {
+    background: rgba(102, 126, 234, 0.05);
+    transform: translateY(-3px);
+}
+
+.description-block .description-header {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 10px 0 5px 0;
+}
+
+.description-block .description-text {
+    color: var(--text-secondary);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ===== MAIN FOOTER ===== */
+.main-footer {
+    background: var(--dark-gradient) !important;
+    color: #bdc3c7 !important;
+    border-top: 4px solid transparent !important;
+    border-image: var(--secondary-gradient) 1 !important;
+    padding: 20px !important;
+}
+
+.main-footer a {
+    color: var(--accent-pink) !important;
+    text-decoration: none;
+}
+
+.main-footer a:hover {
+    color: var(--accent-purple) !important;
+}
+
+/* ===== ANIMACIONES ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.info-box, .box {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.info-box:nth-child(1) { animation-delay: 0.1s; }
+.info-box:nth-child(2) { animation-delay: 0.2s; }
+.info-box:nth-child(3) { animation-delay: 0.3s; }
+.info-box:nth-child(4) { animation-delay: 0.4s; }
+
+.box:nth-child(1) { animation: slideInRight 0.6s ease forwards; animation-delay: 0.5s; }
+.box:nth-child(2) { animation: slideInRight 0.6s ease forwards; animation-delay: 0.6s; }
+.box:nth-child(3) { animation: slideInRight 0.6s ease forwards; animation-delay: 0.7s; }
+
+/* ===== SCROLLBAR PERSONALIZADO ===== */
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.1);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: var(--accent-pink);
+    border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-purple);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .info-box {
+        margin-bottom: 20px;
+    }
+    
+    .box {
+        margin-bottom: 25px;
+    }
+    
+    .users-list > li {
+        margin: 10px !important;
+        padding: 15px !important;
+    }
+    
+    .content-header h1 {
+        font-size: 24px;
+    }
+    
+    .sidebar-menu > li > a {
+        padding: 10px 12px !important;
+    }
+    
+    .sidebar-menu > li.header {
+        padding: 12px 15px 8px 15px;
+        margin: 8px 8px 3px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-box-content {
+        padding: 20px 15px !important;
+    }
+    
+    .info-box-number {
+        font-size: 24px !important;
+    }
+    
+    .box-header {
+        padding: 15px !important;
+    }
+    
+    .box-title {
+        font-size: 16px;
+    }
+    
+    .description-block {
+        padding: 15px;
+    }
+}
+
+/* ===== EFECTOS ESPECIALES ===== */
+.info-box, .box {
+    position: relative;
+    overflow: hidden;
+}
+
+.info-box::after, .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.6s ease;
+    pointer-events: none;
+}
+
+.info-box:hover::after, .box:hover::after {
+    left: 100%;
+}
+
+/* Logo con efecto especial */
+.main-header .logo .logo-lg {
+    background: linear-gradient(45deg, #fff, #f0f0f0, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
